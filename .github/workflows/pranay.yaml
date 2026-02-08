@@ -1,0 +1,22 @@
+name: Pranay Lab 2 - GitHub Actions
+
+on:
+  push:
+    branches: [ "main" ]
+  workflow_dispatch:
+mkdir 
+jobs:
+  build-and-run:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Get the code
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+
+      - name: Run DemoPranay.py
+        run: python DemoPranay.py

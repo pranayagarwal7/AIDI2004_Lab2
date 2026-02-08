@@ -4,7 +4,7 @@ on:
   push:
     branches: [ "main" ]
   workflow_dispatch:
-mkdir 
+
 jobs:
   build-and-run:
     runs-on: ubuntu-latest
